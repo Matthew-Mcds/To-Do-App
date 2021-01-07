@@ -1,21 +1,30 @@
-const dateElement = document.getElementById(date);
-const listElement = document.getElementById(itemList);
-const inputElement = document.getElementById(input);
+var dateElement = document.getElementById('date');
+var buttonElement = document.getElementById('addTodo');
+var listElement = document.getElementById('itemList');
+var inputElement = document.getElementById('UserInput');
 
 
 
-function newTodo(toDo){
+    buttonElement.addEventListener("click", function() {
+        var word = document.createElement('p');
+        word.innerText = inputElement.value;
+        listElement.appendChild(word);
+    
+      });
 
-    const position = "beforeend";
 
 
 
-    const itemText = `<li class="singleItem">
-<i class="glyphicon glyphicon-cloud"></i>
-<p class="text">Look at cloud</p>
-<i class="glyphicon glyphicon-remove"></i>
-</li>`
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13){
+        var word = document.createElement('p');
+        word.innerText = inputElement.value;
+        listElement.appendChild(word);
+        
+    }
 
- listElement.insertAdjacentHTML(position,itemText);
+  });
+    
 
-}
+
+
