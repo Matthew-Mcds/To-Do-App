@@ -6,25 +6,28 @@ var inputElement = document.getElementById('UserInput');
 
 
     buttonElement.addEventListener("click", function() {
-        var word = document.createElement('p');
-        word.innerText = inputElement.value;
-        listElement.appendChild(word);
+       var word = addTodo();
+       listElement.appendChild(word);
     
       });
 
 
-
-
 document.addEventListener("keyup", function(event) {
     if (event.keyCode === 13){
-        var word = document.createElement('p');
-        word.innerText = inputElement.value;
-        listElement.appendChild(word);
+        var word3 = addTodo();
+        listElement.appendChild(word3);
         
     }
 
   });
     
 
+function addTodo(){
+        var word2 = document.createElement('p');
+        word2.innerText = inputElement.value;
+        return word2;
+        
+
+}
 
 

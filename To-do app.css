@@ -1,1 +1,13 @@
+.content {
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 250px;
+  height: 400px;
+}
 
+.inputArea {
+  height: 400px;
+  padding-top: 200px;
+}
