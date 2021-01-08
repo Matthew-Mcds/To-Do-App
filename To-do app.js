@@ -24,6 +24,7 @@ document.addEventListener("keyup", function(event) {
 
 function addTodo(){
         var word2 = document.createElement('p');
+        word2.className = "Todo";
         word2.innerText = inputElement.value;
         return word2;
         

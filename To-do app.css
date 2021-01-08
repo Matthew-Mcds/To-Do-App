@@ -7,7 +7,17 @@
   height: 400px;
 }
 
-.inputArea {
+.content .Todo {
+  color: #4d9c62;
+}
+
+.content .inputArea {
   height: 400px;
   padding-top: 200px;
+  color: #4d9c62;
 }
+
+.content .inputArea .input {
+  color: #4d9c62;
+}
+/*# sourceMappingURL=To-do app.css.map */
